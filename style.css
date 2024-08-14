@@ -1,0 +1,46 @@
+#parent {
+  font-size: 14px; /*Now the font size is 14 px and the child elements inside this parent element can be given the fontsize in em */
+}
+
+div > h1 {
+  font-size: 1em; /*So 1em = 14px depending on the fontsize we given in parent element */
+}
+h2 {
+  font-size: 1.5em; /*1.5em is 1.5 times the 14 px , 2em is 2times the 14 px i.e. 28px like that */
+}
+h3 {
+  font-size: 2em;
+}
+h1 {
+  font-size: 4rem;
+}
+#parent1 {
+  height: 200px;
+  width: 200px;
+  background-color: crimson;
+}
+#child {
+  height: 100px; /*when given in pixels the contentsize remain fixed irrespective of screen sizes*/
+  width: 100px;
+  background-color: rgb(24, 21, 232);
+}
+#perparent {
+  height: 100px;
+  width: 100px;
+  background-color: crimson;
+}
+#perchild {
+  height: 50%; /*when given in percent the contentsize depends on its parent element letsay we have  height of 500px in parent then child will take 250 px height by mentioning 50% i.e half of 500px*/
+  width: 50%;
+  background-color: rgb(24, 21, 232);
+}
+#vwidth {
+  height: 5vh; /*the viewport height is depending on view port i.e. screen size and changes accordingly*/
+  width: 5vw; /*the viewport width is depending on view port i.e. screen size and changes accordingly*/
+  background-color: rgb(20, 220, 53);
+}
+#vmax {
+  height: 5vmin; /*here vmin adust the height depending on the minimum view port if heights view port is larger than widths view port then height will be adjusted based on the height of view port and vice versa*/
+  width: 5vmax; /*here vmax adust the width depending on the maximum view port if heights view port is larger than widths view port then width will be adjusted based on the height of view port and vice versa*/
+  background-color: rgb(24, 21, 232);
+}
