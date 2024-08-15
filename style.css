@@ -16,8 +16,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3vw;
-  border-bottom: 2px solid #dadada;
+  padding: 0 4vw;
   border-radius: 4px;
 }
 nav ul {
@@ -27,11 +26,11 @@ nav ul {
   gap: 3vw;
 }
 nav ul li {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 500;
 }
 nav h2 {
-  font-size: 4vw;
+  font-size: 2vw;
   font-weight: 300;
 }
 #menu {
@@ -47,28 +46,32 @@ nav h2 {
 .left {
   height: 100%;
   width: 60%;
-  padding: 4vw 2.5vw;
+  padding: 0 4vw;
 }
 .left h3 {
-  font-size: 3vw;
-  font-weight: 300;
+  font-size: 4.2vw;
+  line-height: 4.4vw;
+  font-weight: 200;
 }
 .left h3 span {
   color: #ff735c;
 }
 .left p {
   font-size: 2vw;
-  font-weight: 300;
-  margin: 2vw 0;
-  width: 89%;
+  font-weight: 400;
+  margin: 1vw 0;
+  width: 80%;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
 }
 .left button {
-  padding: 1.2vw 2.5vw;
+  padding: 1.3vw 2.3vw;
   background-color: #e95a49;
   border: none;
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
+  font-size: 1.7vw;
 }
 .right {
   height: 100%;
@@ -93,7 +96,7 @@ nav h2 {
     padding: 0 4vw;
   }
   nav h2 {
-    font-size: 7vw;
+    font-size: 3.5vw;
     font-weight: 500;
   }
   nav ul li {
@@ -112,29 +115,43 @@ nav h2 {
     flex-direction: column;
   }
   .left {
-    height: 45%;
+    height: 60%;
     width: 100%;
     padding: 4vw 5vw;
   }
   .right {
-    padding: 5vw 0;
-    height: 55%;
+    height: 40%;
     width: 100%;
   }
   .left h3 {
-    font-size: 7vw;
-    line-height: 10vw;
+    font-size: 6vw;
+    line-height: 6vw;
     font-weight: 600;
   }
   .left p {
-    padding: 2vw 0;
-    font-size: 5vw;
-    width: 90%;
+    padding-top: 1vw;
+    font-size: 3.5vw;
   }
   .left button {
-    padding: 4vw 4vw;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    padding: 1.5vw 3vw;
+    font-size: 3vw;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 400px) {
+  .left h3 {
+    font-size: 7vw;
+    line-height: 7.5vw;
+    font-weight: 700;
+  }
+  .left p {
+    padding: 1.5vw 0;
+    font-size: 4.5vw;
+    width: 95%;
+  }
+  .left button {
+    margin: 2vw 0;
+    padding: 3vw 5vw;
     font-size: 5vw;
     border-radius: 6px;
   }
